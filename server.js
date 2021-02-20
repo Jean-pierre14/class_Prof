@@ -13,6 +13,10 @@ app.get('/api/student', (req, res) => {
     ]
     res.json(student)
 })
+app.post('/api/student', (req, res) => {
+    const { name, classe } = req.body
+
+})
 
 app.listen(PORT, (err) => {
     if (err) throw err
