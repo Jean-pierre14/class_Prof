@@ -4,8 +4,10 @@
   "description": "class project va nous aide a enregistre, calculer et affiche ou que nous soyons quand nous voulons; ses informations serons affiche seulement aux parents et aux eleves qui sont deja enregistre dans notre systeme.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "io": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run io\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
     "consola": "^2.15.3",
     "express": "^4.17.1",
     "mongoose": "^5.11.17"

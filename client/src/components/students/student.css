@@ -1,0 +1,19 @@
+ul {
+    list-style:  none;
+    padding: 0;
+    width: 50%;
+    margin: auto;
+}
+li{
+    line-height: 2rem;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: rgba(0, 1, 6, 0.1);
+    transition: all ease 0.3s;
+}
+li:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
